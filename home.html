@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(bg5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #050505;
+        }
+
+        /* Header */
+        header {
+            background-color: #000901;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            background: #4af5ea;
+            padding: 20px;
+        }
+
+        /* Featured Games */
+        .featured {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .games {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .game-card {
+            background-color: #4af5ea;
+            font-family: Arial, sans-serif;
+            color: #090909;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+        }
+
+        .game-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .game-card h3 {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #070707;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        @media (min-width: 1024px) {
+            .hero {
+                height: 220px;
+            }
+
+            .hero h2 {
+                font-size: 40px;
+            }
+
+            .games {
+                justify-content: center;
+            }
+
+            .game-card {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>GameZone</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to GameZone - Play Your Favorite Games</h2>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured">
+        <h2>Featured Games</h2>
+        <div class="games">
+            <div class="game-card">
+                <img src="XOX.png">
+                <h3>TIC TAC TOE</h3>
+                <a href="game1.html" target="_blank">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="c4.png" alt="Game 2">
+                <h3>Connect 4</h3>
+                <a href="game2.html" target="_blank">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="snl.png" alt="Game 3">
+                <h3>Snake and Ladder</h3>
+                <a href="game3.html" target="_blank">Play Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 GameZone. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
